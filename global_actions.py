@@ -263,6 +263,10 @@ def waypoint_action(client, action):
         else:
             client.jump_label('continue_dawnport')
 
+    elif action == "isLvl8":
+        if client.get_level() >= 8:
+            client.jump_label('leave')
+
     elif action == "end":
         client.logout()
 
