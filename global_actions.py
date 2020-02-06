@@ -267,6 +267,9 @@ def waypoint_action(client, action):
         if client.get_level() >= 8:
             client.jump_label('leave')
 
+    elif action == "goto_exp":
+            client.jump_label('exp')
+            
     elif action == "end":
         client.logout()
 
